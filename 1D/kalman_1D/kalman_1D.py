@@ -30,7 +30,7 @@ class Kalman1D:
         self.P = np.eye(2) * 500
         self.F = np.array([[1, dt], [0, 1]])  # State transition
         self.H = np.array([[1, 0]])  # Measure position only
-        self.Q = np.array([[0.1, 0], [0, 0.1]])  # Process noise
+        self.Q = np.eye(2) * 0.1  # Process noise
         self.R = np.array([[measurement_noise**2]])  # Measurement noise
 
         # Generate true position and measurements

@@ -28,7 +28,7 @@ class Kalman1DInteractive:
         # Initial Kalman state
         self.x = np.array([[0.0], [0.0]])
         self.P = np.eye(2) * 500
-        self.F = np.array([[1, dt], [0, 1]])
+        self.F = np.eye(2) * 0.1
         self.H = np.array([[1, 0]])
 
         # Generate true position and measurements
