@@ -10,14 +10,14 @@ from matplotlib.widgets import Slider
 
 
 class Kalman1DInteractive:
-    def __init__(self, dt=1.0, steps=50, measurement_noise=2.0):
+    def __init__(self, dt=1.0, steps=100, measurement_noise=2.0):
         """
         Initialize the interactive Kalman filter.
 
         Args:
             dt (float): The time interval between data points.
                 Default is 1.0.
-            steps (int): The amount of data received. Default is 50.
+            steps (int): The amount of data received. Default is 100.
             measurement_noise (float): The max amount of noise applied to
                 data. Default is 2.0.
         """
